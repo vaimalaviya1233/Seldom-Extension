@@ -1,14 +1,35 @@
 {
-    "manifest_version": 3,
-    "name": "Udeler - Udemy Resolver",
-    "version": "0.1",
-    "description": "Simple Extension that Redirects websites that offers 100% coupons for udemy without having to click through too much.",
-    "author":"github.com/vaimalaviya1233",
-    "homepage_url": "https://github.com/vaimalaviya1233/Udemy-Sc",
-    "minimum_chrome_version": "105",
-    "short_name": "Udeler",
-    
-
-
-
+  "manifest_version": 3,
+  "name": "Udeler - Udemy Resolver",
+  "version": "0.1",
+  "description": "Simple Extension that Redirects websites that offers 100% coupons for udemy without having to click through too much.",
+  "author": "github.com/vaimalaviya1233",
+  "homepage_url": "https://github.com/vaimalaviya1233/Udemy-Sc",
+  "minimum_chrome_version": "105",
+  "short_name": "Udeler",
+  "content_scripts": [
+    {
+        "matches": ["https://*.coursevania.com/courses/*"],
+        "css": [""],
+        "js": ["/js/coursevania.js"],
+        "run_at": "document_idle"
+    },{
+        "matches": ["https://*.couponscorpion.com/*"],
+        "css": [""],
+        "js": ["/js/couponscorpion.js"],
+        "run_at": "document_idle"
+    },{
+        "matches": ["https://*.couponscorpion.com/*"],
+        "css": [""],
+        "js": ["/js/couponscorpion.js"],
+        "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Run Bookmarklet For this site."
+  }
 }
