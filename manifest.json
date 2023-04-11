@@ -31,5 +31,9 @@
   ],
   "action": {
     "default_title": "Run Bookmarklet For this site."
-  }
+  },
+"background": {
+  "service_worker": "/js/background.js"
+}
+
 }
