@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Udeler - Udemy Resolver",
+    "version": "0.1",
+    "description": "Simple Extension that Redirects websites that offers 100% coupons for udemy without having to click through too much.",
+    "author":"github.com/vaimalaviya1233",
+    "homepage_url": "https://github.com/vaimalaviya1233/Udemy-Sc",
+    "minimum_chrome_version": "105",
+    "short_name": "Udeler",
+    
+
+
+
+}
